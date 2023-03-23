@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bomberman</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <h1>BOMBERMAN</h1>
+    <section>
+      <aside class="instructions">
+        <div class="instructions_item">
+          <div class="key">W</div>
+          <span class="action">up</span>
+        </div>
+        <div class="instructions_item">
+          <div class="key">S</div>
+          <span class="action">down</span>
+        </div>
+        <div class="instructions_item">
+          <div class="key">A</div>
+          <span class="action">left</span>
+        </div>
+        <div class="instructions_item">
+          <div class="key">D</div>
+          <span class="action">right</span>
+        </div>
+        <div class="instructions_item">
+          <div class="key">ShiftLeft</div>
+          <span class="action">place bomb</span>
+        </div>
+      </aside>
+
+      <div class="main-game">
+        <canvas id="screen" width="544" height="384"></canvas>
+        <div class="players-bar">
+          <div class="player-bar player1-bar">
+            <h3 class=player-bar_player-name>Player1</h3>
+            <div class="player-skill_item">
+              <img src="img/rollers.png">
+              <span class="player-skill_value" id="player1_speed">0</span>
+            </div>
+            <div class="player-skill_item">
+              <img src="img/bomb.png">
+              <span class="player-skill_value" id="player1_bomb-power">0</span>
+            </div>
+          </div>
+
+          <div class="player-bar player2-bar">
+            <h3 class=player-bar_player-name>Player2</h3>
+            <div class="player-skill_item">
+              <img src="img/rollers.png">
+              <span class="player-skill_value" id="player2_speed">0</span>
+            </div>
+            <div class="player-skill_item">
+              <img src="img/bomb.png">
+              <span class="player-skill_value" id="player2_bomb-power">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="instructions">
+        <div class="instructions_item">
+          <div class="key">ArrowUp</div>
+          <span class="action">up</span>
+        </div>
+        <div class="instructions_item">
+          <div class="key">ArrowDown</div>
+          <span class="action">down</span>
+        </div>
+        <div class="instructions_item">
+          <div class="key">ArrowLeft</div>
+          <span class="action">left</span>
+        </div>
+        <div class="instructions_item">
+          <div class="key">ArrowRight</div>
+          <span class="action">right</span>
+        </div>
+        <div class="instructions_item">
+          <div class="key">ShiftRight</div>
+          <span class="action">place bomb</span>
+        </div>
+      </aside>
+    </section>
+    <script src="js/marks.js"></script>
+    <script src="js/drawer/image_loader.js"></script>
+    <script src="js/drawer/sprite_sheet.js"></script>
+    <script src="js/drawer/drawer.js"></script>
+    <script src="js/bomb.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/general_field.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
